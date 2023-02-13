@@ -13,9 +13,9 @@ body {
   margin: 20px auto;
 }
 .main-content {
-  overflow: auto;
   margin-left: 320px;
   width: 100%;
+  background-color: #f9fafb;
 }
 .home-top-panel {
   display: flex;
@@ -153,16 +153,60 @@ p.equal {
   gap: 15px;
 }
 .overview-card {
-  background-image: radial-gradient(
-    farthest-corner at 80px 29px,
-    #bf83ff -160%,
-    #ffffff 100%
-  );
   border-radius: 15px;
   box-shadow: 0px 0px 31px rgb(0 0 0 / 12%);
-  padding: 10px;
-  height: max-content;
+  padding: 15px;
+  height: 100%;
   width: 100%;
+}
+.revenue-crd {
+  background-image: radial-gradient(
+    farthest-corner at 82px 82px,
+    #fa5a7d -170%,
+    #ffffff 82%
+  );
+}
+.gas-crd {
+  background-image: radial-gradient(
+    farthest-corner at 82px 82px,
+    #ff947a -135%,
+    #ffffff 82%
+  );
+}
+.support-crd {
+  background-image: radial-gradient(
+    farthest-corner at 82px 82px,
+    #3cd856 -135%,
+    #ffffff 82%
+  );
+}
+.refferal-crd {
+  background-image: radial-gradient(
+    farthest-corner at 82px 82px,
+    #bf83ff -135%,
+    #ffffff 82%
+  );
+}
+.unfulfill-crd {
+  background-image: radial-gradient(
+    farthest-corner at 82px 82px,
+    #f5549f -135%,
+    #ffffff 82%
+  );
+}
+.subscriber-crd {
+  background-image: radial-gradient(
+    farthest-corner at 82px 82px,
+    #ffd83d -135%,
+    #ffffff 82%
+  );
+}
+.microsites-crd {
+  background-image: radial-gradient(
+    farthest-corner at 82px 82px,
+    #01e7c1 -135%,
+    #ffffff 82%
+  );
 }
 .overview-card h4 {
   text-align: center;
@@ -188,6 +232,101 @@ p.equal {
   height: 30px;
   width: auto;
 }
+.dashboard-charts {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.dashboard-charts h3 {
+  margin: 10px 0px 0px 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.dashboard-charts .line-chart,
+.dashboard-charts .bar-chart,
+.dashboard-charts .area-chart,
+.dashboard-charts .sales-leader-board,
+.customer-support-board,
+.customer-support-board-body {
+  box-shadow: 0px 0px 31px rgb(0 0 0 / 12%);
+  border-radius: 15px;
+}
+.line-chart .apexcharts-toolbar,
+.area-chart .apexcharts-toolbar {
+  right: 15px !important;
+}
+.sales-leader-board .sales-leader-board-inside {
+  height: auto;
+  width: 500px;
+}
+.sales-data-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 15px;
+}
+.sales-data-body {
+  display: flex;
+  align-items: center;
+  border-top: 0.5px solid #edf2f6;
+  justify-content: space-between;
+  padding: 0px 15px;
+}
+.sales-data-head p {
+  color: #96a5b8;
+}
+.sales-data-body p {
+  font-size: 15px;
+}
+p.number-col {
+  width: 10%;
+}
+p.name-col {
+  width: 45%;
+}
+div.amount-col {
+  width: 40%;
+}
+p.owed-col {
+  width: 15%;
+  text-align: center;
+}
+.amount-col div {
+  width: 85%;
+  height: 4px;
+  border-radius: 15px;
+}
+p.owed-col label {
+  border-radius: 8px;
+  padding: 1px 8px;
+  font-size: 13px;
+}
+.customer-support-board-inside {
+  height: 100%;
+  width: 335px;
+}
+.customer-support-board-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 15px;
+  gap: 15px;
+}
+.customer-support-board-body div h4 {
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.customer-support-board-body div p {
+  margin: 0px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.customer-support-time {
+  text-align: center;
+}
 /* ======================= Sidebar start ==================== */
 .main-container {
   display: flex;
@@ -195,7 +334,7 @@ p.equal {
 .sidebar {
   width: 320px;
   height: 100vh;
-  background-color: aliceblue;
+  background-color: #fff;
   position: fixed;
 }
 .sidebar-logo {
