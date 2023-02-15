@@ -15,7 +15,7 @@ const Supports = () => {
         <div className="main-container">
           <Sidebar />
           <div className="main-content">
-            <div className="container">
+            <div className="home-top-panel-out">
               <div className="home-top-panel">
                 <h2>Dashboard</h2>
                 <input type="text" placeholder="🔎︎ Search here..." />
@@ -35,6 +35,7 @@ const Supports = () => {
                 </div>
               </div>
             </div>
+            <div className="container"></div>
           </div>
         </div>
       </main>

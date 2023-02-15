@@ -1,10 +1,8 @@
 import Sidebar from "@/components/Sidebar";
 import Head from "next/head";
 import Image from "next/image";
-import { HiPencil } from "react-icons/hi";
-import { BiDownload } from "react-icons/bi";
 
-const Subscribers = () => {
+const Orders = () => {
   return (
     <>
       <Head>
@@ -38,28 +36,27 @@ const Subscribers = () => {
               </div>
             </div>
             <div className="container">
-              <div className="subscriber-top-panel">
-                <input type="text" placeholder="🔎︎ Search here..." />
-                <div className="filter">
-                  <p>Filter</p>
-                  <select>
-                    <option>Date</option>
-                  </select>
-                  <button type="submit">
-                    Export <BiDownload size={20} />
-                  </button>
-                </div>
+              <div className="filter">
+                <p>Filter</p>
+                <select>
+                  <option>Date</option>
+                </select>
+                <select>
+                  <option>Name</option>
+                </select>
               </div>
               <div className="table">
                 <div className="table-head">
-                  <p className="subscriber-date">Date</p>
-                  <p className="subscriber-name">Name</p>
-                  <p className="subscriber-email">Email</p>
-                  <p className="subscriber-edit">Edit</p>
+                  <p className="order-no">Order No</p>
+                  <p className="order-customer">Customer</p>
+                  <p className="order-product">Product</p>
+                  <p className="order-price">Price</p>
+                  <p className="order-date">Delivery Date</p>
+                  <p className="order-status">Delivery Status</p>
                 </div>
                 <div className="table-body">
-                  <p className="subscriber-date">7/11/2022</p>
-                  <div className="subscriber-name table-image">
+                  <p className="order-no">1009701</p>
+                  <div className="order-customer table-image">
                     <Image
                       src="/image/supportImage.png"
                       alt="user_image"
@@ -68,14 +65,18 @@ const Subscribers = () => {
                     />
                     <p>Hamid Hasan</p>
                   </div>
-                  <p className="subscriber-email">hamidul3@gmail.com</p>
-                  <p className="subscriber-edit">
-                    <HiPencil size={20} color={"#5197ca"} />
+                  <p className="order-product">Black NFC Card</p>
+                  <p className="order-price">$24.99</p>
+                  <p className="order-date">7/11/2022</p>
+                  <p className="order-status">
+                    <span style={{ backgroundColor: "#ffa800" }}>
+                      Processing
+                    </span>
                   </p>
                 </div>
                 <div className="table-body">
-                  <p className="subscriber-date">7/11/2022</p>
-                  <div className="subscriber-name table-image">
+                  <p className="order-no">1009701</p>
+                  <div className="order-customer table-image">
                     <Image
                       src="/image/supportImage.png"
                       alt="user_image"
@@ -84,14 +85,16 @@ const Subscribers = () => {
                     />
                     <p>Hamid Hasan</p>
                   </div>
-                  <p className="subscriber-email">hamidul3@gmail.com</p>
-                  <p className="subscriber-edit">
-                    <HiPencil size={20} color={"#5197ca"} />
+                  <p className="order-product">Black NFC Card</p>
+                  <p className="order-price">$24.99</p>
+                  <p className="order-date">7/11/2022</p>
+                  <p className="order-status">
+                    <span style={{ backgroundColor: "#2ac53a" }}>Complete</span>
                   </p>
                 </div>
                 <div className="table-body">
-                  <p className="subscriber-date">7/11/2022</p>
-                  <div className="subscriber-name table-image">
+                  <p className="order-no">1009701</p>
+                  <div className="order-customer table-image">
                     <Image
                       src="/image/supportImage.png"
                       alt="user_image"
@@ -100,9 +103,11 @@ const Subscribers = () => {
                     />
                     <p>Hamid Hasan</p>
                   </div>
-                  <p className="subscriber-email">hamidul3@gmail.com</p>
-                  <p className="subscriber-edit">
-                    <HiPencil size={20} color={"#5197ca"} />
+                  <p className="order-product">Black NFC Card</p>
+                  <p className="order-price">$24.99</p>
+                  <p className="order-date">7/11/2022</p>
+                  <p className="order-status">
+                    <span style={{ backgroundColor: "#ff4f4f" }}>Cancel</span>
                   </p>
                 </div>
               </div>
@@ -114,4 +119,4 @@ const Subscribers = () => {
   );
 };
 
-export default Subscribers;
+export default Orders;

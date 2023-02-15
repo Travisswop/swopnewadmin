@@ -1,8 +1,11 @@
+import { useRouter } from "next/router";
 import Sidebar from "@/components/Sidebar";
 import Head from "next/head";
 import Image from "next/image";
 
-const Products = () => {
+const Order = () => {
+  const router = useRouter();
+  const { _id } = router.query;
   return (
     <>
       <Head>
@@ -15,7 +18,7 @@ const Products = () => {
         <div className="main-container">
           <Sidebar />
           <div className="main-content">
-            <div className="container">
+            <div className="home-top-panel-out">
               <div className="home-top-panel">
                 <h2>Dashboard</h2>
                 <input type="text" placeholder="🔎︎ Search here..." />
@@ -35,6 +38,9 @@ const Products = () => {
                 </div>
               </div>
             </div>
+            <div className="container">
+              <h1>Order {_id}</h1>
+            </div>
           </div>
         </div>
       </main>
@@ -42,4 +48,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default Order;

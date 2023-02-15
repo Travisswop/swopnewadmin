@@ -15,7 +15,7 @@ const Financials = () => {
         <div className="main-container">
           <Sidebar />
           <div className="main-content">
-            <div className="container">
+            <div className="home-top-panel-out">
               <div className="home-top-panel">
                 <h2>Dashboard</h2>
                 <input type="text" placeholder="🔎︎ Search here..." />
@@ -32,6 +32,46 @@ const Financials = () => {
                     className="travis_image"
                   />
                   <p>Travis Herron</p>
+                </div>
+              </div>
+            </div>
+            <div className="container">
+              <div className="table">
+                <div className="table-head">
+                  <p className="financial-amount">Aggregates Amounts</p>
+                  <p className="financial-revenue">Revenue</p>
+                  <p className="financial-assets">Assets</p>
+                  <p className="financial-profit">Profit</p>
+                  <p className="financial-acqCost">Customer Acquistion Cost</p>
+                  <p className="financial-costCustomer">Cost Per Customer</p>
+                  <p className="financial-projection">Projections</p>
+                </div>
+                <div className="table-body">
+                  <p className="financial-amount">40$</p>
+                  <p className="financial-revenue">40%</p>
+                  <p className="financial-assets">3</p>
+                  <p className="financial-profit">40$</p>
+                  <p className="financial-acqCost">40$</p>
+                  <p className="financial-costCustomer">40$</p>
+                  <p className="financial-projection">40%</p>
+                </div>
+                <div className="table-body">
+                  <p className="financial-amount">40$</p>
+                  <p className="financial-revenue">40%</p>
+                  <p className="financial-assets">3</p>
+                  <p className="financial-profit">40$</p>
+                  <p className="financial-acqCost">40$</p>
+                  <p className="financial-costCustomer">40$</p>
+                  <p className="financial-projection">40%</p>
+                </div>
+                <div className="table-body">
+                  <p className="financial-amount">40$</p>
+                  <p className="financial-revenue">40%</p>
+                  <p className="financial-assets">3</p>
+                  <p className="financial-profit">40$</p>
+                  <p className="financial-acqCost">40$</p>
+                  <p className="financial-costCustomer">40$</p>
+                  <p className="financial-projection">40%</p>
                 </div>
               </div>
             </div>
