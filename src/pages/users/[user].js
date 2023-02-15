@@ -40,7 +40,7 @@ const User = () => {
               </div>
             </div>
             <div className="container">
-              {/* <h1>User {_id}</h1> */}
+              {/* <h1>User </h1> */}
               <div className="user-top-banner">
                 <button>
                   Export <BiDownload size={20} />
@@ -54,6 +54,100 @@ const User = () => {
                   />
                   <p>Travis Herron</p>
                   <a href="www.swopme.com/Travis">www.swopme.com/Travis</a>
+                </div>
+              </div>
+              <div className="user-bottom">
+                <div className="user-bottom-left">
+                  <p>
+                    Email:
+                    <br />
+                    traviskaterherron@gmail.com
+                  </p>
+                  <p>
+                    Phone:
+                    <br />
+                    +1 (860) 126763
+                  </p>
+                  <p>
+                    Premium Subscriber?
+                    <br />
+                    No{" "}
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <span class="slider round"></span>
+                    </label>{" "}
+                    Yes
+                    <br />
+                    <input
+                      type="text"
+                      placeholder="TXID"
+                      className="user-txid"
+                    />
+                    <button className="user-txid-btn">Save</button>
+                  </p>
+                  <p>
+                    Public Ethereum Address:
+                    <br />
+                    {_id}
+                  </p>
+                  <p>
+                    Associated NFC Serial No:
+                    <br />
+                    100023423429
+                  </p>
+                  <p className="user-order-img">
+                    Order history:
+                    <br />
+                    <Image
+                      src="/image/product1.png"
+                      alt="product_image"
+                      height={556}
+                      width={556}
+                    />
+                    <span>2</span>{" "}
+                    <Image
+                      src="/image/product2.png"
+                      alt="product_image"
+                      height={556}
+                      width={556}
+                    />
+                    <span>2</span>
+                  </p>
+                </div>
+                <div className="user-bottom-right">
+                  <p>
+                    Sign Up Date:
+                    <br />
+                    1/1/2023
+                  </p>
+                  <p>
+                    Username:
+                    <br />
+                    $Travis
+                  </p>
+                  <p>
+                    Referral Code:
+                    <br />
+                    XCDFVCD
+                  </p>
+                  <p>
+                    Date of birth:
+                    <br />
+                    12-7-2002
+                  </p>
+                  <p>
+                    Address 1:
+                    <br />
+                    360 N Graham St
+                  </p>
+                  <p>
+                    Address 2:
+                    <br />
+                    Apt 305
+                  </p>
+                  <p>State/Providence:: NC</p>
+                  <p>Country: USA</p>
+                  <p>Zipcode:: 890263</p>
                 </div>
               </div>
             </div>

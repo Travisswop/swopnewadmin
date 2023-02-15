@@ -744,11 +744,12 @@ p.order-status span {
 }
 .user-top-banner {
   background: url("/image/user-page-banner.png") no-repeat center center;
-  background-size: cover;
+  background-size: auto;
   height: 100%;
   width: 100%;
   border-radius: 15px;
   display: grid;
+  box-shadow: 0px 0px 20px #0808081c;
 }
 .user-top-banner button {
   display: flex;
@@ -768,6 +769,8 @@ p.order-status span {
 .user-top-banner-inside img {
   height: 150px;
   width: auto;
+  border-radius: 50%;
+  box-shadow: 0px 0px 30px #0000005e;
 }
 .user-top-banner-inside {
   padding: 20px 0px;
@@ -776,10 +779,59 @@ p.order-status span {
 .user-top-banner-inside p {
   color: #fff;
   margin: 0px;
+  font-weight: 500;
 }
 .user-top-banner-inside a {
   text-decoration: none;
   color: #fff;
+}
+.user-txid {
+  background-color: #f2f2f2;
+  height: 40px;
+  width: 250px;
+  padding-left: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.user-txid:focus {
+  outline: none;
+}
+.user-txid-btn {
+  background-color: #000;
+  color: #fff;
+  height: 30px;
+  width: 45px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+  left: -50px;
+}
+.user-order-img img {
+  height: 50px;
+  width: auto;
+  background-color: #e4e4e4;
+  border-radius: 5px;
+  padding: 3px;
+  margin-top: 10px;
+}
+.user-order-img span {
+  background-color: #000;
+  color: #fff;
+  padding: 0px 5px;
+  margin: 0px;
+  border-radius: 50%;
+  font-size: 12px;
+  position: relative;
+  top: -45px;
+  left: -9px;
+}
+.user-bottom {
+  display: flex;
+  padding: 10px;
+}
+.user-bottom div {
+  width: 45%;
 }
 /* ======================= Sidebar start ==================== */
 .sidebar {
@@ -823,3 +875,57 @@ p.order-status span {
   color: #fff !important;
 }
 /* ======================= Sidebar end ====================== */
+
+/* ====================== toggol button start =============== */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 20px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.user-bottom .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 0px;
+  bottom: 0px;
+  background-color: #000;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.user-bottom input:checked + .slider {
+  background-color: #757575;
+}
+.user-bottom input:focus + .slider {
+  box-shadow: 0 0 1px #5f5f5f;
+}
+.user-bottom input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+/* Rounded sliders */
+.user-bottom .slider.round {
+  border-radius: 20px;
+}
+.user-bottom .slider.round:before {
+  border-radius: 50%;
+}
+/* ======================= toggol button end ========================  */
