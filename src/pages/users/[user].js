@@ -40,7 +40,6 @@ const User = () => {
               </div>
             </div>
             <div className="container">
-              {/* <h1>User </h1> */}
               <div className="user-top-banner">
                 <button>
                   Export <BiDownload size={20} />
@@ -77,6 +76,16 @@ const User = () => {
                       <span class="slider round"></span>
                     </label>{" "}
                     Yes
+                  </p>
+                  <p>
+                    Received Gas Subsidy?
+                    <br />
+                    No{" "}
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <span class="slider round"></span>
+                    </label>{" "}
+                    Yes
                     <br />
                     <input
                       type="text"
@@ -95,24 +104,32 @@ const User = () => {
                     <br />
                     100023423429
                   </p>
-                  <p className="user-order-img">
-                    Order history:
+                  <div>
+                    <label>Order history:</label>
                     <br />
-                    <Image
-                      src="/image/product1.png"
-                      alt="product_image"
-                      height={556}
-                      width={556}
-                    />
-                    <span>2</span>{" "}
-                    <Image
-                      src="/image/product2.png"
-                      alt="product_image"
-                      height={556}
-                      width={556}
-                    />
-                    <span>2</span>
-                  </p>
+                    <div className="user-order-img-container">
+                      <div className="user-order-img">
+                        <Image
+                          src="/image/product1.png"
+                          alt="product_image"
+                          height={556}
+                          width={556}
+                        />
+                        <span>2</span>
+                        <p>Swop Gold NFC</p>
+                      </div>
+                      <div className="user-order-img">
+                        <Image
+                          src="/image/product2.png"
+                          alt="product_image"
+                          height={556}
+                          width={556}
+                        />
+                        <span>2</span>
+                        <p>Swop Black NFC</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div className="user-bottom-right">
                   <p>
