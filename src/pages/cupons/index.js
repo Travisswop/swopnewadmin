@@ -2,7 +2,7 @@ import Sidebar from "@/components/Sidebar";
 import Head from "next/head";
 import Image from "next/image";
 import { BiDownload } from "react-icons/bi";
-import { HiPencil } from "react-icons/hi";
+import { HiOutlineEye } from "react-icons/hi";
 
 const Cupons = () => {
   return (
@@ -58,7 +58,7 @@ const Cupons = () => {
                   <p className="cupon-amount">Amount</p>
                   <p className="cupon-minAmount">Minimum Amount</p>
                   <p className="cupon-exDate">Expire Date</p>
-                  <p className="cupon-edit">Edit</p>
+                  <p className="cupon-view">View</p>
                 </div>
                 <div className="table-body">
                   <p className="cupon-cupon">
@@ -82,34 +82,8 @@ const Cupons = () => {
                   <p className="cupon-amount">$80</p>
                   <p className="cupon-minAmount">$50</p>
                   <p className="cupon-exDate">7/11/2022</p>
-                  <p className="cupon-edit">
-                    <HiPencil size={20} color={"#5197ca"} />
-                  </p>
-                </div>
-                <div className="table-body">
-                  <p className="cupon-cupon">
-                    <Image
-                      src="/image/cupon.png"
-                      alt="cupon_image"
-                      height={93}
-                      width={52}
-                    />
-                  </p>
-                  <div className="cupon-name table-image">
-                    <Image
-                      src="/image/supportImage.png"
-                      alt="user_image"
-                      height={45}
-                      width={45}
-                    />
-                    <p>Hamid Hasan</p>
-                  </div>
-                  <p className="cupon-promocode">8hg4xcvv</p>
-                  <p className="cupon-amount">$80</p>
-                  <p className="cupon-minAmount">$50</p>
-                  <p className="cupon-exDate">7/11/2022</p>
-                  <p className="cupon-edit">
-                    <HiPencil size={20} color={"#5197ca"} />
+                  <p className="cupon-view">
+                    <HiOutlineEye size={20} color={"#5197ca"} />
                   </p>
                 </div>
                 <div className="table-body">
@@ -134,8 +108,8 @@ const Cupons = () => {
                   <p className="cupon-amount">$80</p>
                   <p className="cupon-minAmount">$50</p>
                   <p className="cupon-exDate">7/11/2022</p>
-                  <p className="cupon-edit">
-                    <HiPencil size={20} color={"#5197ca"} />
+                  <p className="cupon-view">
+                    <HiOutlineEye size={20} color={"#5197ca"} />
                   </p>
                 </div>
                 <div className="table-body">
@@ -160,8 +134,34 @@ const Cupons = () => {
                   <p className="cupon-amount">$80</p>
                   <p className="cupon-minAmount">$50</p>
                   <p className="cupon-exDate">7/11/2022</p>
-                  <p className="cupon-edit">
-                    <HiPencil size={20} color={"#5197ca"} />
+                  <p className="cupon-view">
+                    <HiOutlineEye size={20} color={"#5197ca"} />
+                  </p>
+                </div>
+                <div className="table-body">
+                  <p className="cupon-cupon">
+                    <Image
+                      src="/image/cupon.png"
+                      alt="cupon_image"
+                      height={93}
+                      width={52}
+                    />
+                  </p>
+                  <div className="cupon-name table-image">
+                    <Image
+                      src="/image/supportImage.png"
+                      alt="user_image"
+                      height={45}
+                      width={45}
+                    />
+                    <p>Hamid Hasan</p>
+                  </div>
+                  <p className="cupon-promocode">8hg4xcvv</p>
+                  <p className="cupon-amount">$80</p>
+                  <p className="cupon-minAmount">$50</p>
+                  <p className="cupon-exDate">7/11/2022</p>
+                  <p className="cupon-view">
+                    <HiOutlineEye size={20} color={"#5197ca"} />
                   </p>
                 </div>
               </div>

@@ -535,7 +535,7 @@ p.order-status span {
 .cupon-exDate {
   width: 15%;
 }
-.cupon-edit {
+.cupon-view {
   width: 5%;
 }
 .cupon-cupon img {
@@ -1037,6 +1037,7 @@ p.order-status span {
 }
 .add-variant {
   height: 25px;
+  width: max-content;
 }
 .product-info {
   display: flex;
@@ -1077,28 +1078,117 @@ p.order-status span {
   font-size: 24px;
   font-weight: 600;
 }
-.table .product-product {
-  width: 20%;
+.table-product-product {
+  width: 15%;
 }
-.table .product-name {
-  width: 20%;
+.table-product-name {
+  width: 25%;
 }
-.table .product-price {
+.table-product-price {
   width: 10%;
 }
-.table .product-bonus {
+.table-product-bonus {
+  width: 15%;
+}
+.table-product-quantity {
   width: 10%;
 }
-.table .product-quantity {
-  width: 10%;
+.table-product-color {
+  width: 25%;
 }
-.table .product-color {
-  width: 30%;
+.promocode-card {
+  box-shadow: 0px 0px 30px #8686862c;
+  border-radius: 15px;
 }
-.table .product-product img {
-  height: 100%;
+.promocode-background {
+  background-color: rgba(0, 236, 174, 0.12);
+  text-align: center;
+  padding: 50px 0px;
+  border-top-right-radius: 17px;
+  border-top-left-radius: 17px;
+}
+.promocode-background img {
+  height: 200px;
   width: auto;
 }
+.promocode-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: center;
+}
+.promocode-inside {
+  width: 50%;
+  padding: 0px 15px;
+}
+.promocode-bottom button {
+  background-image: linear-gradient(to right, #55b6ff, #797eff);
+  border: none;
+  color: #fff;
+  padding: 12px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+.promocode-inside p {
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.promocode-inside input[type="text"],
+.promocode-inside input[type="date"],
+.promocode-inside input[type="file"] {
+  padding: 8px 20px;
+  width: 100%;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  border: 0.5px solid #ebebeb;
+}
+.promocode-inside textarea {
+  padding: 8px 20px;
+  width: 100%;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  border: 0.5px solid #ebebeb;
+}
+.promocode-inside textarea:focus,
+.promocode-inside input[type="date"]:focus,
+.promocode-inside input[type="text"]:focus {
+  outline: none;
+}
+/*  */
+input[type="radio"]:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #ffffff;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid rgb(184, 184, 184);
+}
+input[type="radio"]:checked:after {
+  background: #00e2b3;
+  box-shadow: 0px 0px 0.2rem #00e2b5c7;
+  border: 2px solid rgb(255, 255, 255);
+}
+input[type="checkbox"]:checked {
+  background: #00e2b3;
+  border-color: #00e2b3;
+}
+input[type="checkbox"]:focus {
+  border-color: #00e2b3;
+}
+input[type="radio"]:focus {
+  border-color: #00e2b3;
+}
+input[type="radio"]:checked {
+  border-color: #00e2b3;
+}
+/*  */
 /* ======================= Sidebar start ==================== */
 .sidebar {
   width: 320px;

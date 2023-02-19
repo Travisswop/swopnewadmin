@@ -184,15 +184,15 @@ const Product = () => {
                 </div>
                 <div className="table">
                   <div className="table-head">
-                    <p className="product-product">Product</p>
-                    <p className="product-name">Product Name</p>
-                    <p className="product-price">Price</p>
-                    <p className="product-bonus">Bonus</p>
-                    <p className="product-quantity">Quantity</p>
-                    <p className="product-color">Color</p>
+                    <p className="table-product-product">Product</p>
+                    <p className="table-product-name">Product Name</p>
+                    <p className="table-product-price">Price</p>
+                    <p className="table-product-bonus">Bonus</p>
+                    <p className="table-product-quantity">Quantity</p>
+                    <p className="table-product-color">Color</p>
                   </div>
                   <div className="table-body">
-                    <div className="product-product table-image">
+                    <div className="table-product-product table-image">
                       <Image
                         src="/image/product1.png"
                         alt="user_image"
@@ -200,11 +200,41 @@ const Product = () => {
                         width={45}
                       />
                     </div>
-                    <p className="product-name">Gold NFC</p>
-                    <p className="product-price">12$</p>
-                    <p className="product-bonus">57%</p>
-                    <p className="product-quantity">57</p>
-                    <p className="product-color">Black, White</p>
+                    <p className="table-product-name">Gold NFC</p>
+                    <p className="table-product-price">12$</p>
+                    <p className="table-product-bonus">57%</p>
+                    <p className="table-product-quantity">57</p>
+                    <p className="table-product-color">Black, White</p>
+                  </div>
+                  <div className="table-body">
+                    <div className="table-product-product table-image">
+                      <Image
+                        src="/image/product1.png"
+                        alt="user_image"
+                        height={45}
+                        width={45}
+                      />
+                    </div>
+                    <p className="table-product-name">Gold NFC</p>
+                    <p className="table-product-price">12$</p>
+                    <p className="table-product-bonus">57%</p>
+                    <p className="table-product-quantity">57</p>
+                    <p className="table-product-color">Black, White</p>
+                  </div>
+                  <div className="table-body">
+                    <div className="table-product-product table-image">
+                      <Image
+                        src="/image/product1.png"
+                        alt="user_image"
+                        height={45}
+                        width={45}
+                      />
+                    </div>
+                    <p className="table-product-name">Gold NFC</p>
+                    <p className="table-product-price">12$</p>
+                    <p className="table-product-bonus">57%</p>
+                    <p className="table-product-quantity">57</p>
+                    <p className="table-product-color">Black, White</p>
                   </div>
                 </div>
               </div>
